@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title >
+      Messages
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-card *ngFor="let Messages of getMessage()">
+
+  <ion-card-content *ngIf="Messages.image">
+    <ion-img img src="{{Messages.imageUrl}}"></ion-img>
+  </ion-card-content>
+
+  <ion-card-header>
+  <ion-card-title>
+    {{Messages.from}}
+  </ion-card-title>
+  <ion-card-subtitle>
+    Messages.text
+  </ion-card-subtitle>
+  </ion-card-header>
+
+
+  <ion-card></ion-card>

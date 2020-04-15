@@ -1,0 +1,19 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+ion-card-content {
+  padding: 10px;
+}
+
+ion-card-header {
+  padding-top: 0px;
+}
+
+ion-card-title {
+  font-size: 14px;
+  color: darkgray;
+  font-family: monospace;
+  text-align: right;
+  margin-bottom: 5px;
+}

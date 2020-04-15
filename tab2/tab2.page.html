@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>
+      Post
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-card>
+  <ion-card-content>
+
+    <ion-item>
+      <ion-label position="stacked">Your Message</ion-label>
+      <ion-input [(ngModel)]="message.text" name="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Image URL</ion-label>
+      <ion-input [(ngModel)]="message.imageUrl" name="text"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="onPost()" class="main-button" expand="block" color="dark">Submit</ion-button>
+
+  </ion-card-content>
+</ion-card>
+</ion-content>
